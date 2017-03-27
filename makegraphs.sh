@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script is triggered evrytime the web page is accessed / refreshed so as to give up to the second graphs.
+
 # 10 Min graph
 rrdtool graph /var/www/currentcost/graphs/power-10min.png \
 --start end-10m --width 700 --end now --slope-mode \
