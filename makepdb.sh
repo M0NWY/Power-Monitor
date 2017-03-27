@@ -1,3 +1,5 @@
+
+# this script ( command ?) creates the nesssary rrd database structures and sets sensible limits for the data.
 rrdtool create power.rrd --step 1 \
 DS:Power:GAUGE:180:-50000:50000 \
 RRA:AVERAGE:0.5:1:3200 \
