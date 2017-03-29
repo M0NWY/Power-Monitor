@@ -20,7 +20,7 @@
  <h1>Simon's power consumption graphs</h1>
  <h2>Current Use : <?php echo exec("cat /dev/shm/power"); ?> Watts</h2>
 
-<p><b>Note:</b> The data is not calibrated, ie. the indicated consumption is not                                                                                                                      accurate. Data updated every minute.</p>
+<p><b>Note:</b> The data is not calibrated, ie. the indicated consumption is not accurate. Data updated every minute.</p>
 
  <h2>Previous 10 minutes</h2>
  <p><img src="graphs/power-10min.png" /></p>
@@ -50,7 +50,7 @@
  <p><img src="graphs/power-10year.png" /></p>
 
 
-<p style="text-align: center;">Shamelessly stolen code from Paul Mutton 2008 by                                                                                                                      Simon Newhouse 2013 !</p>
+<p style="text-align: center;">Shamelessly stolen code from Paul Mutton 2008 by Simon Newhouse 2013 !</p>
 
 </body>
 
