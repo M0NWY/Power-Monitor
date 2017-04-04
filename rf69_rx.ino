@@ -1,15 +1,4 @@
-// rf69_client.pde
-// -*- mode: C++ -*-
-// Example sketch showing how to create a simple messageing client
-// with the RH_RF69 class. RH_RF69 class does not provide for addressing or
-// reliability, so you should only use RH_RF69  if you do not need the higher
-// level messaging abilities.
-// It is designed to work with the other example rf69_server.
-// Demonstrates the use of AES encryption, setting the frequency and modem 
-// configuration
-// Tested on Moteino with RFM69 http://lowpowerlab.com/moteino/
-// Tested on miniWireless with RFM69 www.anarduino.com/miniwireless
-// Tested on Teensy 3.1 with RF69 on PJRC breakout board
+// modded from the example
 
 #include <SPI.h>
 #include <RH_RF69.h>
@@ -28,7 +17,7 @@ void setup()
   // No encryption
   if (!rf69.setFrequency(433.0))
     Serial.println("setFrequency failed");
-rf69.setModemConfig(RH_RF69::GFSK_Rb2Fd5);
+rf69.setModemConfig(RH_RF69::GFSK_Rb2Fd5);// long and slow :-)
  
   // If you are using a high power RF69, you *must* set a Tx power in the
   // range 14 to 20 like this:
