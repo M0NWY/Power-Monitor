@@ -4,10 +4,10 @@
 //
 // Original Author: Robin Emley (calypso_rae on Open Energy Monitor Forum)
 // Addition of Wh totals by: Trystan Lea
-
+// Changed to radio head - rf69 by Simon Newhouse as I couldn't get the JeeLib to work !
 
 #include <Arduino.h> // may not be needed, but it's probably a good idea to include this
-//#include <JeeLib.h>     // RFu_JeeLib is available at from: http://github.com/openenergymonitor/RFu_jeelib
+//#include <JeeLib.h>     // RFu_JeeLib is available at from: http://github.com/openenergymonitor/RFu_jeelib -sn
 
 #include <SPI.h>
 #include <RH_RF69.h>
@@ -667,7 +667,7 @@ fudge += ",";
 fudge += tx_data.msgNumber;
 fudge += "</OEM>";
 
-//fudge = "fuckety fuck fuck";
+//fudge = "testerty test test";
 int flen = fudge.length();
  uint8_t data[flen];
   for  ( int i = 0 ; i < flen; i++ )
